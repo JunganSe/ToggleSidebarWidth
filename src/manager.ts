@@ -1,27 +1,44 @@
 import * as vscode from 'vscode';
 import { StorageWorker } from './storageWorker';
+import { VscodeWorker } from './vscodeWorker';
+import { DEFAULT_DEFAULT_WIDTH, DEFAULT_STORED_WIDTH } from './constants';
 
 export class SidebarWidthManager {
-    private readonly context: vscode.ExtensionContext;
     private readonly storageWorker: StorageWorker;
+    private readonly vscodeWorker: VscodeWorker;
 
     constructor(context: vscode.ExtensionContext) {
-        this.context = context;
         this.storageWorker = new StorageWorker(context);
+        this.vscodeWorker = new VscodeWorker(context);
     }
 
     public toggleWidth() {
-        // TODO: Implement toggle.
-        console.log('toggleWidth activated');
+        const currentWidth = this.vscodeWorker.getSidebarWidth();
+        const defaultWidth = this.storageWorker.getDefaultWidth() ?? DEFAULT_DEFAULT_WIDTH;
+
+        if (currentWidth === defaultWidth) {
+            this.restoreStoredWidth();
+        } else {
+            this.restoreDefaultWidth();
+        }
     }
 
     public restoreDefaultWidth() {
-        // TODO: Implement restoreDefaultWidth.
-        console.log('restoreDefaultWidth activated');
+        const currentWidth = this.vscodeWorker.getSidebarWidth();
+        const defaultWidth = this.storageWorker.getDefaultWidth() ?? DEFAULT_DEFAULT_WIDTH;
+
+        if (currentWidth !== defaultWidth) {
+            this.storageWorker.setStoredWidth(currentWidth);
+            this.vscodeWorker.setSidebarWidth(defaultWidth);
+        }
     }
 
     public restoreStoredWidth() {
-        // TODO: Implement restoreStoredWidth.
-        console.log('restoreStoredWidth activated');
+        const currentWidth = this.vscodeWorker.getSidebarWidth();
+        const storedWidth = this.storageWorker.getStoredWidth() ?? DEFAULT_STORED_WIDTH;;
+
+        if (currentWidth !== storedWidth) {
+            this.vscodeWorker.setSidebarWidth(storedWidth);
+        }
     }
 }
