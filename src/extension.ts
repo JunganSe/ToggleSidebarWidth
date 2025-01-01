@@ -14,3 +14,8 @@ function registerCommand(context: vscode.ExtensionContext, command: string, call
 }
 
 export function deactivate() { }
+
+// TODO: Setup hotkeys for the commands.
+// TODO: Readme.
+// TODO: Changelog.
+// TODO: Remove quickstart file.
