@@ -1,13 +1,13 @@
 import * as vscode from 'vscode';
-import { SidebarWidthWorker } from './worker';
+import { StorageWorker } from './storageWorker';
 
 export class SidebarWidthManager {
     private readonly context: vscode.ExtensionContext;
-    private readonly worker: SidebarWidthWorker;
+    private readonly storageWorker: StorageWorker;
 
     constructor(context: vscode.ExtensionContext) {
         this.context = context;
-        this.worker = new SidebarWidthWorker(context);
+        this.storageWorker = new StorageWorker(context);
     }
 
     public toggleWidth() {
