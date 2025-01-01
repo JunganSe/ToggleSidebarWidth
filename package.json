@@ -14,8 +14,16 @@
   "contributes": {
     "commands": [
       {
-        "command": "toggle-sidebar-width.helloWorld",
-        "title": "Hello World"
+        "command": "toggle-sidebar-width.toggleWidth",
+        "title": "Toggle sidebar width"
+      },
+      {
+        "command": "toggle-sidebar-width.restoreDefaultWidth",
+        "title": "Restore sidebar width to default"
+      },
+      {
+        "command": "toggle-sidebar-width.restoreStoredWidth",
+        "title": "Restore sidebar width"
       }
     ]
   },
