@@ -25,6 +25,20 @@
         "command": "toggle-sidebar-width.restoreStoredWidth",
         "title": "Restore sidebar width"
       }
+    ],
+    "keybindings":[
+      {
+        "command": "toggle-sidebar-width.toggleWidth",
+        "key": "alt+b"
+      },
+      {
+        "command": "toggle-sidebar-width.restoreDefaultWidth",
+        "key": ""
+      },
+      {
+        "command": "toggle-sidebar-width.restoreStoredWidth",
+        "key": ""
+      }
     ]
   },
   "scripts": {
