@@ -1,7 +1,6 @@
 // #region Storage keys
-const KEY_PREFIX = 'toggle-sidebar-width';
-export const KEY_DEFAULT_WIDTH = KEY_PREFIX + '.defaultWidth';
-export const KEY_STORED_WIDTH = KEY_PREFIX + '.storedWidth';
+export const KEY_DEFAULT_WIDTH = 'toggle-sidebar-width.defaultWidth';
+export const KEY_STORED_WIDTH = 'toggle-sidebar-width.storedWidth';
 // #endregion
 
 // #region Default values
