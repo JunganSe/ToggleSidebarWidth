@@ -39,7 +39,18 @@
         "command": "toggle-sidebar-width.restoreStoredWidth",
         "key": ""
       }
-    ]
+    ],
+    "configuration": {
+      "title": "Toggle Sidebar Width",
+      "properties": {
+        "toggleSidebarWidth.defaultWidth": {
+          "type": "number",
+          "default": 255,
+          "minimum": 170,
+          "description": "The default sidebar width in pixels."
+        }
+      }
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
