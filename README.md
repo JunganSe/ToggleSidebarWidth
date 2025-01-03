@@ -1,3 +1,9 @@
+### WIP
+This extension is in development, and is not yet released.\
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+
+
+
 # Toggle sidebar width
 
 Allows toggling the primary sidebar width between a preset default width and the last used width.
@@ -11,9 +17,9 @@ Allows toggling the primary sidebar width between a preset default width and the
 - `toggleSidebarWidth.defaultWidth`: Set the default sidebar wisth in pixels.
 
 ## Keyboard shortcuts
-- `toggle-sidebar-width.toggleWidth`: Toggle the sidebar width between the current and default value. Default: `Alt+B`
-- `toggle-sidebar-width.restoreDefaultWidth`: Set the sidebar width to the default value. Default: `(unset)`
-- `toggle-sidebar-width.restoreStoredWidth`: Set the sidebar width to the previously used value. Default: `(unset)`
-
-## Release Notes
-TODO
+- `toggle-sidebar-width.toggleWidth`: Toggle the sidebar width between the current and default value.\
+  Default: `Alt+B`
+- `toggle-sidebar-width.restoreDefaultWidth`: Set the sidebar width to the default value.\
+  Default: `(unset)`
+- `toggle-sidebar-width.restoreStoredWidth`: Set the sidebar width to the previously used value.\
+  Default: `(unset)`
