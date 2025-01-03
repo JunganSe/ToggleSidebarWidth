@@ -2,7 +2,7 @@ import * as vscode from 'vscode';
 import { KEY_DEFAULT_WIDTH, KEY_STORED_WIDTH } from './constants';
 import { log } from 'console';
 
-export class StorageWorker{
+export class StorageWorker {
     private readonly context: vscode.ExtensionContext;
 
     constructor(context: vscode.ExtensionContext) {
