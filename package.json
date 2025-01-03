@@ -3,12 +3,25 @@
   "displayName": "Toggle Sidebar Width",
   "description": "",
   "version": "0.0.0",
-  "engines": {
-    "vscode": "^1.96.0"
-  },
+  "publisher": "JunganSe",
   "categories": [
     "Other"
   ],
+  "keywords": [
+    "sidebar"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JunganSe/ToggleSidebarWidth"
+  },
+  "icon": "",
+  "galleryBanner": {
+    "color": "#009000",
+    "theme": "dark"
+  },
+  "engines": {
+    "vscode": "^1.96.0"
+  },
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {

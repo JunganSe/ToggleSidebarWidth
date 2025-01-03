@@ -14,5 +14,3 @@ function registerCommand(context: vscode.ExtensionContext, command: string, call
 }
 
 export function deactivate() { }
-
-// TODO: Add package.json: keywords, categories, repo link, version, etc.
