@@ -1,8 +1,8 @@
+import { log } from 'console';
 import * as vscode from 'vscode';
+import { DEFAULT_DEFAULT_WIDTH, DEFAULT_STORED_WIDTH } from './constants';
 import { StorageWorker } from './storageWorker';
 import { VscodeWorker } from './vscodeWorker';
-import { DEFAULT_DEFAULT_WIDTH, DEFAULT_STORED_WIDTH } from './constants';
-import { log } from 'console';
 
 let self: SidebarWidthManager;
 
