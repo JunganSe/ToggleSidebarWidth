@@ -2,7 +2,7 @@
   "name": "toggle-sidebar-width",
   "displayName": "Toggle Sidebar Width",
   "description": "",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "engines": {
     "vscode": "^1.96.0"
   },
