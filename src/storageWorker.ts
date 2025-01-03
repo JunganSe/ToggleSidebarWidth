@@ -9,11 +9,10 @@ export class StorageWorker{
     }
 
     getDefaultWidth(): number {
-        return this.getNumber(KEY_DEFAULT_WIDTH);
-    }
-
-    setDefaultWidth(width: number): void {
-        this.setNumber(KEY_DEFAULT_WIDTH, width);
+        const value = vscode.workspace
+            .getConfiguration()
+            .get<number>(KEY_DEFAULT_WIDTH);
+        return Number(value);
     }
 
     getStoredWidth(): number {
