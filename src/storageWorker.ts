@@ -16,19 +16,11 @@ export class StorageWorker{
     }
 
     getStoredWidth(): number {
-        return this.getNumber(KEY_STORED_WIDTH);
-    }
-
-    setStoredWidth(width: number): void {
-        this.setNumber(KEY_STORED_WIDTH, width);
-    }
-
-    private getNumber(key: string): number {
-        const storedValue = this.context.workspaceState.get(key);
+        const storedValue = this.context.workspaceState.get(KEY_STORED_WIDTH);
         return Number(storedValue);
     }
 
-    private setNumber(key: string, value: number): void {
-        this.context.workspaceState.update(key, value);
+    setStoredWidth(width: number): void {
+        this.context.workspaceState.update(KEY_STORED_WIDTH, width);
     }
 }
