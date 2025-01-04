@@ -1,6 +1,6 @@
 import { log } from 'console';
+import { KEY_DEFAULT_WIDTH, KEY_STORED_WIDTH } from 'src/constants';
 import * as vscode from 'vscode';
-import { KEY_DEFAULT_WIDTH, KEY_STORED_WIDTH } from './constants';
 
 export class StorageWorker {
     private readonly context: vscode.ExtensionContext;

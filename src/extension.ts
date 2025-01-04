@@ -1,5 +1,5 @@
+import { SidebarWidthManager } from 'src/manager';
 import * as vscode from 'vscode';
-import { SidebarWidthManager } from './manager';
 
 export function activate(context: vscode.ExtensionContext) {
     const manager = new SidebarWidthManager(context);
