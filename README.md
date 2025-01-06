@@ -14,7 +14,7 @@ Allows toggling the primary sidebar width between a preset default width and the
 - Use with commands or keyboard shortcuts.
 
 ## Settings
-- `toggleSidebarWidth.defaultWidth`: Set the default sidebar wisth in pixels.
+- `toggleSidebarWidth.defaultWidth`: Set the default sidebar width in pixels.
 
 ## Keyboard shortcuts
 - `toggle-sidebar-width.toggleWidth`: Toggle the sidebar width between the current and default value.\
