@@ -1,4 +1,3 @@
-import { log } from 'console';
 import * as vscode from 'vscode';
 
 export class VscodeWorker {
@@ -11,12 +10,12 @@ export class VscodeWorker {
     getSidebarWidth(): number {
         // TODO: Implement getSidebarWidth.
         const tempWidth = 500;
-        log('getSidebarWidth', tempWidth);
+        console.log('getSidebarWidth', tempWidth);
         return Number(tempWidth);
     }
 
     setSidebarWidth(width: number): void {
         // TODO: Implement setSidebarWidth.
-        log('setSidebarWidth', width);
+        console.log('setSidebarWidth', width);
     }
 }

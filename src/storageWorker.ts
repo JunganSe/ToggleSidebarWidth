@@ -1,4 +1,3 @@
-import { log } from 'console';
 import { KEY_DEFAULT_WIDTH, KEY_STORED_WIDTH } from 'src/constants';
 import * as vscode from 'vscode';
 
@@ -13,18 +12,18 @@ export class StorageWorker {
         const value = vscode.workspace
             .getConfiguration()
             .get<number>(KEY_DEFAULT_WIDTH);
-        log('getDefaultWidth', value);
+        console.log('getDefaultWidth', value);
         return Number(value);
     }
 
     getStoredWidth(): number {
         const storedValue = this.context.workspaceState.get(KEY_STORED_WIDTH);
-        log('getStoredWidth', storedValue);
+        console.log('getStoredWidth', storedValue);
         return Number(storedValue);
     }
 
     setStoredWidth(width: number): void {
-        log('setStoredWidth', width);
+        console.log('setStoredWidth', width);
         this.context.workspaceState.update(KEY_STORED_WIDTH, width);
     }
 }

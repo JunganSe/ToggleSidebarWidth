@@ -1,4 +1,3 @@
-import { log } from 'console';
 import { DEFAULT_DEFAULT_WIDTH, DEFAULT_STORED_WIDTH } from 'src/constants';
 import { StorageWorker } from 'src/storageWorker';
 import { VscodeWorker } from 'src/vscodeWorker';
@@ -17,7 +16,7 @@ export class SidebarWidthManager {
     }
 
     toggleWidth() {
-        log('toggleWidth');
+        console.log('toggleWidth');
         const currentWidth = self.vscodeWorker.getSidebarWidth();
         const defaultWidth = self.storageWorker.getDefaultWidth() || DEFAULT_DEFAULT_WIDTH;
 
@@ -28,7 +27,7 @@ export class SidebarWidthManager {
     }
 
     restoreDefaultWidth() {
-        log('restoreDefaultWidth');
+        console.log('restoreDefaultWidth');
         const currentWidth = self.vscodeWorker.getSidebarWidth();
         const defaultWidth = self.storageWorker.getDefaultWidth() || DEFAULT_DEFAULT_WIDTH;
 
@@ -39,7 +38,7 @@ export class SidebarWidthManager {
     }
 
     restoreStoredWidth() {
-        log('restoreStoredWidth');
+        console.log('restoreStoredWidth');
         const currentWidth = self.vscodeWorker.getSidebarWidth();
         const storedWidth = self.storageWorker.getStoredWidth() || DEFAULT_STORED_WIDTH;;
 
