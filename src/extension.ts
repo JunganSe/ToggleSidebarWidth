@@ -1,8 +1,8 @@
-import { SidebarWidthManager } from 'src/manager';
+import { Manager } from 'src/manager';
 import * as vscode from 'vscode';
 
 export function activate(context: vscode.ExtensionContext) {
-    const manager = new SidebarWidthManager(context);
+    const manager = new Manager(context);
     registerCommand(context, 'toggle-sidebar-width.toggleWidth', manager.toggleWidth);
     registerCommand(context, 'toggle-sidebar-width.restoreDefaultWidth', manager.restoreDefaultWidth);
     registerCommand(context, 'toggle-sidebar-width.restoreStoredWidth', manager.restoreStoredWidth);

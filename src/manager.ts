@@ -3,9 +3,9 @@ import { StorageWorker } from 'src/storageWorker';
 import { VscodeWorker } from 'src/vscodeWorker';
 import * as vscode from 'vscode';
 
-let self: SidebarWidthManager;
+let self: Manager;
 
-export class SidebarWidthManager {
+export class Manager {
     private readonly storageWorker: StorageWorker;
     private readonly vscodeWorker: VscodeWorker;
 
